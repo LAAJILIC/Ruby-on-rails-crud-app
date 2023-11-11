@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+<br />
+<br />
+<br />
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= @friend.first_name %> <%= @friend.last_name %></h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">from <%= @friend.country %></h6>
+    <p class="card-text">My friend is fluently speaking <%= @friend.language %>  
+    </p>
+          <br />
+<div class="modal-footer">
+         <%= link_to "Edit this friend", edit_friend_path(@friend), class:"btn btn-secondary" %>
+  <%= link_to "Back to friends", friends_path, class:"btn btn-dark" %>
+<br /><br />
+
+  <%= button_to "Destroy this friend", @friend, class:"btn btn-danger", method: :delete %>
+      </div>
+   
+  </div>
+</div>
+
+
+
+
